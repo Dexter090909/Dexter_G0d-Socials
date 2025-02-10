@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Links</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff; /* Default text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #8A2BE2; /* Set background to #8A2BE2 */
+        }
+
+        .social-container {
+            display: grid; /* Use CSS Grid for layout */
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 15px; /* Gaps between boxes */
+            width: 90%; /* Container width */
+            max-width: 800px; /* Maximum width */
+            text-align: center; /* Center the text */
+        }
+
+        h1 {
+            grid-column: span 2; /* Make title span the width of the container */
+            margin-bottom: 20px; /* Add space below the title */
+            font-size: 2em; /* Adjust heading size */
+        }
+
+        .social-box {
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            min-height: 120px; /* Minimum height for boxes */
+            opacity: 1; /* Initial opacity for visibility */
+            cursor: pointer; /* Change the cursor to indicate a clickable box */
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .social-box:hover {
+            transform: scale(1.05); /* Slightly enlarge the box on hover */
+            background: rgba(255, 255, 255, 0.1); /* Add a subtle hover background */
+        }
+
+        /* Assign different colors to social boxes */
+        .social-box:nth-child(2) { background-color: #7289da; } /* Discord color */
+        .social-box:nth-child(3) { background-color: #FF0000; } /* YouTube color */
+        .social-box:nth-child(4) { background-color: #C13584; } /* Instagram color */
+        .social-box:nth-child(5) { background-color: #9146FF; } /* Twitch color */
+        .social-box:nth-child(6) { background-color: #1DA1F2; } /* X (Twitter) color */
+        .social-box:nth-child(7) { background-color: #24292e; } /* GitHub color */
+        .social-box:last-child { background-color: #69C9D0; } /* TikTok color */
+
+        a {
+            text-decoration: none;
+            color: #ffffff; /* Default link color */
+            font-size: 16px; /* Adjust font size */
+            display: block;  /* Make the entire box clickable */
+            height: 100%;    /* Ensure full height for anchor */
+            width: 100%;     /* Ensure full width for anchor */
+        }
+
+        /* Center the last box perfectly */
+        .social-container > .social-box:last-child {
+            grid-column: 1 / -1; /* Span the entire row */
+            justify-self: center; /* Center the content in the column */
+        }
+    </style>
+</head>
+<body>
+    <div class="social-container">
+        <h1>Follow Me On Social Media!</h1>
+        <div class="social-box">
+            <a href="https://discord.gg/UgPjZKkFTK" target="_blank">
+                <strong>Discord</strong>
+                <p>Join my Discord community where I share exclusive scripts for Roblox hacks! Here, you can participate in discussions, ask questions, and receive live updates on my latest projects.</p>
+            </a>
+        </div>
+        <div class="social-box">
+            <a href="https://www.youtube.com/@Dexslabs" target="_blank">
+                <strong>YouTube</strong>
+                <p>Subscribe to my YouTube channel for in-depth videos showcasing the Roblox script hacks I'm developing. Watch me demonstrate how they work, along with tutorials and gameplay footage!</p>
+            </a>
+        </div>
+        <div class="social-box">
+            <a href="https://www.instagram.com/dexter_g0d/" target="_blank">
+                <strong>Instagram</strong>
+                <p>Follow me on Instagram to see pictures and short clips of my Roblox script hacks in action. I’ll share sneak peeks, updates on my projects, and gaming moments that you won’t want to miss!</p>
+            </a>
+        </div>
+        <div class="social-box">
+            <a href="https://www.twitch.tv/imanddanger" target="_blank">
+                <strong>Twitch</strong>
+                <p>Catch me live on Twitch as I stream my Roblox gameplay and showcase the script hacks I’m creating. Join the chat, ask questions, and watch the magic happen in real-time!</p>
+            </a>
+        </div>
+        <div class="social-box">
+            <a href="https://x.com/dexter090lab" target="_blank">
+                <strong>X (Twitter)</strong>
+                <p>Follow me on X (formerly Twitter) for quick updates about my latest Roblox hacks, streaming schedules, and links to new videos. Engage with me and the community as I share insights and tips!</p>
+            </a>
+        </div>
+        <div class="social-box">
+            <a href="https://github.com/Dexter090909" target="_blank">
+                <strong>GitHub</strong>
+                <p>Explore my GitHub repository where you can find the latest scripts I’m working on for Roblox hacks. I provide detailed information and help you get started with your own creations!</p>
+            </a>
+        </div>
+        <div class="social-box">
+            <a href="https://www.tiktok.com/@dexter_764" target="_blank">
+                <strong>TikTok</strong>
+                <p>Follow me on TikTok for fun and creative short videos showcasing my Roblox scripting journeys. Get entertained with quick hacks, tips, and insights from my latest projects!</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
